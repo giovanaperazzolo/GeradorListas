@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(246, 235, 237);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    font-size: 1.5em;
+}
+
+h1, form{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 5px;
+    font-size: 1.5em;
+    border: none;
+    background: white;
+}
+
+.not-completed, .completed{
+    margin: 5px;
+    padding: 20px;
+}
+
+ul{
+    list-style: none;
+    counter-reset: my-counter;
+}
+
+ul li{
+    width: 905;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.5em;
+    counter-increment: my-counter;
+}
+
+ul.completed li{
+    background-color: rgb(163, 231, 163);
+}
+
+ul.not-completed li{
+    background-color: rgb(250, 127, 127);
+}
+
+ul li::before{
+    content: counter(my-counter);
+    display: inline-block;
+    border-radius: 55%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 205, 140);
+    text-align: center;
+    margin-right: 5px;
+}
+
+h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+li button{
+    float: right;
+    padding: 5px;
+    font-size: 17px;
+    line-height: 15px;
+    margin-left: 5px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.returnPage{
+    float: right;
+    margin: 7px;
+    padding: 300px 0;
+}
+
+a .buttonReturn{
+    background-color: palevioletred;
+    width: 25px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    padding: 0 -15px;
+}

@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #121214;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: #343439;
+    padding: 30px 50px;
+    min-width: 470px;
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 389);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h3{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.input-group{
+    display: flex;
+    padding: 20px 0px;
+    gap: 50px;
+}
+
+.input-fiel label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.input-field input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid plum;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+}
+
+.input-field input:focus{
+    outline: none;
+    border-bottom: 3px solid plum;
+}
+
+#generate{
+    background-color: purple;
+    border: none;
+    padding: 13px 50px;
+    border-radius: 4px;
+    width: 100%;
+    margin: 20px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#list{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/*configuração das listas*/
+h1, form{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 5px;
+    font-size: 1.5em;
+    border: none;
+    background: white;
+}
+
+.not-completed, .completed{
+    margin: 5px;
+    padding: 20px;
+}
+
+ul{
+    list-style: none;
+    counter-reset: my-counter;
+}
+
+ul li{
+    width: 905;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.5em;
+    counter-increment: my-counter;
+}
+
+ul.completed li{
+    background-color: rgb(163, 231, 163);
+}
+
+ul.not-completed li{
+    background-color: rgb(250, 127, 127);
+}
+
+ul li::before{
+    content: counter(my-counter);
+    display: inline-block;
+    border-radius: 55%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 205, 140);
+    text-align: center;
+    margin-right: 5px;
+}
+
+h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+li button{
+    float: right;
+    padding: 5px;
+    font-size: 17px;
+    line-height: 15px;
+    margin-left: 5px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+ul a .buttonView{
+    background-color: transparent;
+    border: none;
+}
