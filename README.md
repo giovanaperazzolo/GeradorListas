@@ -6,7 +6,7 @@
 ### As listas, quando criadas, são ordenadas de acordo com a ordem de entrada.
 ### Após a criação da lista, há dois botões: uma lixeira e um olho, sendo eles para deletar a lista e para editar a lista, respectivamente. 
 
-![image](https://user-images.githubusercontent.com/62448232/223901080-11d31802-f3f3-416a-976c-adb3f8bb0282.png)
+![image](https://user-images.githubusercontent.com/62448232/223901769-e0a0ff8d-40df-43c8-98a1-c6059818410c.png)
 
 ## Editar Lista
 
